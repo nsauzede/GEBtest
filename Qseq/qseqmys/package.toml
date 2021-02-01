@@ -1,0 +1,8 @@
+[package]
+name = "qseqmys"
+version = "0.1.0"
+authors = ["Nicolas Sauzede <nsauzede@laposte.net>"]
+description = "Add a short package description here."
+
+[dependencies]
+# foobar = "*"
