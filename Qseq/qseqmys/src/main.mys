@@ -4,5 +4,5 @@ def main():
     #n=20
     q=[1,1]
     for i in range(2,n):
-        q = q + [q[i - q[i-1]] + q[i - q[i-2]]]
+        q.append(q[i - q[i-1]] + q[i - q[i-2]])
     print(f"Q={q}")
