@@ -6,7 +6,6 @@ q<<1 q << 1
 for i:=2; i < n; i++ {
     q<<q[i - q[i-1]] + q[i - q[i-2]]
 }
-//println('Q=${q}')
 C.printf("Q=[")
 for i:=0; i<q.len; i++ {
         if i>0 {

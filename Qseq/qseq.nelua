@@ -8,7 +8,6 @@ q:push(1) q:push(1)
 for i=2,<n do
 	q:push(q[i - q[i-1]] + q[i - q[i-2]])
 end
-----[[
 C.printf("Q=[")
 for i=0,<#q do
 	if i>0 then
@@ -17,4 +16,3 @@ for i=0,<#q do
 	C.printf("%d",q[i])
 end
 C.printf("]\n")
---]]--

@@ -5,18 +5,9 @@ def main():
     q=[1,1]
     for i in range(2,n):
         q.append(q[i - q[i-1]] + q[i - q[i-2]])
-    #print(f"Q={q}")
-    c"""
-    printf("Q=[");
-    """
+    c"""printf("Q=[");"""
     for i,e in enumerate(q):
         if i>0:
-            c"""
-            printf(", ");
-            """
-        c"""
-        printf("%d", e);
-        """
-    c"""
-    printf("]\n");
-    """
+            c"""printf(", ");"""
+        c"""printf("%d", e);"""
+    c"""printf("]\n");"""
