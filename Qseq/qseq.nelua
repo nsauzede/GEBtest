@@ -3,7 +3,7 @@ require 'C.stdio'
 local n=20000000
 --local n=40000
 --local n=20
-local q:vector(integer)={}
+local q:vector(int32)
 q:push(1) q:push(1)
 for i=2,<n do
 	q:push(q[i - q[i-1]] + q[i - q[i-2]])
